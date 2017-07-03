@@ -107,8 +107,9 @@ The code for making predictions on my final model is located in the 11th cell of
 The top five soft max probabilities for the first image were (predicted wrongly)
 
 Doulbe curve:
-Probability |Prediction
---- |---
+
+Probability | Prediction
+--- | ---
 .770        |Road work 
 .215        |Doulbe curve 
 .014        |Slipper road 
