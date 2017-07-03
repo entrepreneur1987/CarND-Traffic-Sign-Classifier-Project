@@ -42,23 +42,24 @@ As a last step, I normalized the image data because it will make training faster
 #### Model architecture summary
 My final model consisted of the following layers:
 
-Layer   Description
-Input   32x32x1 GrayScale image
-Convolution 5x5 1x1 stride, VALID padding, outputs 28x28x16
-RELU    
-Max pooling 2x2 stride, outputs 14x14x16
-Convolution 5x5 1x1 stride, VALID padding, outputs 10x10x128
-Max pooling 2x2 stride, outputs 5x5x128
-Dropout with keep_prod = 0.7
-Fully connected 3200->800
-RELU
-Fully connected 800->400
-RELU
-Fully connected 400->120
-RELU
-Fully connected 120->84
-RELU
-Fully connected 84->43
+Layer   | Description
+--- | ---
+Input   |32x32x1 GrayScale image
+Convolution |5x5 1x1 stride, VALID padding, outputs 28x28x16
+RELU |   
+Max pooling |2x2 stride, outputs 14x14x16
+Convolution |5x5 1x1 stride, VALID padding, outputs 10x10x128
+Max pooling |2x2 stride, outputs 5x5x128
+Dropout with |keep_prod = 0.7
+Fully connected |3200->800
+RELU|
+Fully connected |800->400
+RELU|
+Fully connected |400->120
+RELU|
+Fully connected |120->84
+RELU|
+Fully connected |84->43
 
 To train the model, I used Adam optimizer, with BATCH_SIZE = 128, EPOCH = 30 and learning rate = 0.001
 
@@ -67,8 +68,11 @@ My modeled is based on LeNet, with addition of dropout and higher depth, which e
 My final model results were:
 
 training set accuracy of 0.999
+
 validation set accuracy of 0.946
+
 test set accuracy of 0.935
+
 If an iterative approach was chosen:
 
 #### Q & A
@@ -84,14 +88,15 @@ The speed 30 image might be difficult to classify because the number gets wrong 
 
 Here are the results of the prediction:
 
-Image   Prediction
-Double curve, Double curve/Road work(different runs)
-No entry, No entry
-Children passing, Children passing
-Road work, Road work
-Speed 30km/h, Speed 30km/h
-Stop Sign   Stop sign
-Yield   Yield
+Image |   Prediction
+--- | --- | ---
+Double curve |Double curve/Road work(different runs)
+No entry |No entry
+Children passing |Children passing
+Road work |Road work
+Speed 30km/h |Speed 30km/h
+Stop Sign |Stop sign
+Yield   |Yield
 
 The model was able to correctly guess 7 of the 7 traffic signs, which gives an accuracy of 80%-100%. This compares favorably to the accuracy on the test set of 93.5%
 
@@ -102,11 +107,12 @@ The code for making predictions on my final model is located in the 11th cell of
 The top five soft max probabilities for the first image were (predicted wrongly)
 
 Doulbe curve:
-Probability Prediction
-.770    Road work
-.215    Doulbe curve
-.014    Slipper road
-.0002   Dangerous curve to the left
-.000058 Wild animal crossing
+|Probability |Prediction|
+|------------|----------|
+|.770        |Road work |
+|.215        |Doulbe curve |
+|.014        |Slipper road |
+|.0002       |Dangerous curve to the left |
+|.000058     |Wild animal crossing |
 
 
