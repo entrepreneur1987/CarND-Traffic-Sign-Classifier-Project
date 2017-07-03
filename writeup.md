@@ -1,6 +1,6 @@
 # Traffic Sign Recognition
 
-Build a Traffic Sign Recognition Project
+### Build a Traffic Sign Recognition Project
 
 The goals / steps of this project are the following:
 
@@ -12,17 +12,15 @@ Analyze the softmax probabilities of the new images
 Summarize the results with a written report
 Rubric Points
 
-###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
+### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.
 
-###Writeup / README
-
-####1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
+### Writeup / README
 
 You're reading it! and here is a link to my [project code](https://github.com/entrepreneur1987/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
-####1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
+#### 1. Provide a basic summary of the data set. In the code, the analysis should be done using python, numpy and/or pandas methods rather than hardcoding results manually.
 
 I used the numpy library to calculate summary statistics of the traffic signs data set:
 
@@ -32,15 +30,16 @@ The size of test set is 4410
 The shape of a traffic sign image is (32,32,3)
 The number of unique classes/labels in the data set is 43
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
+#### Data Pre-processing
 I did some data augmentation by rotating images whose class has less examples to make the distribution more balanced.
 
 I also converted the images to grayscale because same traffic sign class may contain images with different colors.
 
 As a last step, I normalized the image data because it will make training faster.
 
-
+#### Model architecture summary
 My final model consisted of the following layers:
 
 Layer   Description
@@ -72,10 +71,12 @@ validation set accuracy of 0.946
 test set accuracy of 0.935
 If an iterative approach was chosen:
 
+#### Q & A
 What was the first architecture that was tried and why was it chosen? LeNet, because it's simple
 What were some problems with the initial architecture? Accuracy stuck at 0.92
 How was the architecture adjusted and why was it adjusted? Added dropout layer, as well as increasing the depth of the convolutional layer
 
+### Test on images from the web
 Here are seven German traffic signs that I found on the web: 
 Double curve, No entry, Children passing, Road work, speed 30, Stop and Yield
 
