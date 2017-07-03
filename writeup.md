@@ -108,7 +108,7 @@ The top five soft max probabilities for the first image were (predicted wrongly)
 
 Doulbe curve:
 Probability |Prediction
-------------|----------
+--- |---
 .770        |Road work 
 .215        |Doulbe curve 
 .014        |Slipper road 
