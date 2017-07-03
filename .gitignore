@@ -1,4 +1,7 @@
-data
+tensorflow/
+bin/
+include/
+lib/
 .ipynb_checkpoints
 *.h5
 models
