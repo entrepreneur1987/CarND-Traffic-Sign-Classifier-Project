@@ -89,7 +89,7 @@ The speed 30 image might be difficult to classify because the number gets wrong 
 Here are the results of the prediction:
 
 Image |   Prediction
---- | --- | ---
+--- | ---
 Double curve |Double curve/Road work(different runs)
 No entry |No entry
 Children passing |Children passing
@@ -107,12 +107,12 @@ The code for making predictions on my final model is located in the 11th cell of
 The top five soft max probabilities for the first image were (predicted wrongly)
 
 Doulbe curve:
-|Probability |Prediction|
-|------------|----------|
-|.770        |Road work |
-|.215        |Doulbe curve |
-|.014        |Slipper road |
-|.0002       |Dangerous curve to the left |
-|.000058     |Wild animal crossing |
+Probability |Prediction
+------------|----------
+.770        |Road work 
+.215        |Doulbe curve 
+.014        |Slipper road 
+.0002       |Dangerous curve to the left 
+.000058     |Wild animal crossing 
 
 
